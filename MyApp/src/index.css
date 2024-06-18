@@ -1,0 +1,7 @@
+:root {
+  --colorSuccess: #47984b;
+}
+.Main {
+  /* color: #47984b; */
+  color: var(--colorSuccess);   
+}
