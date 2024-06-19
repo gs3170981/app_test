@@ -18,7 +18,12 @@
 7. feat: navigation（导航跳转，社区主推）
 > https://reactnavigation.org/docs/navigating
 
+8. feat: icon（图标，需要额外配置）
+``` ts
+// android/app/build.gradle
 
+apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
+```
 
 
 
