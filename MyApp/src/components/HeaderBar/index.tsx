@@ -28,7 +28,7 @@ const HeaderBar: React.FC<IProps> = (props) => {
   const renderRightComponent = () => {
     return <View style={styles.rightComponent}>
       <Pressable
-        style={{ marginLeft: 10 }}
+        // style={{ marginLeft: 10 }}
         onPress={() => {}}
       >
         <Icon type="antdesign" name="rocket1" color="white" />
@@ -37,6 +37,10 @@ const HeaderBar: React.FC<IProps> = (props) => {
   }
 
   return <Header
+    containerStyle={{
+      padding: 0,
+      margin: 0,
+    }}
     leftComponent={renderLeftComponent()}
     rightComponent={renderRightComponent()}
     centerComponent={renderCenterComponent()}

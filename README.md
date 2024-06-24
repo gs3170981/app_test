@@ -24,6 +24,12 @@
 
 apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
 ```
+antd注意要改为小写，并取消轮毂之类的描述词，如何使用：
+> https://reactnativeelements.com/docs/components/icon
+
+8. feat: svg支持
+> https://github.com/software-mansion/react-native-svg?tab=readme-ov-file
+
 
 
 

@@ -1,0 +1,97 @@
+@import '../../styles/index.less';
+
+.layout {
+  elevation: 10;
+  flex: 1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+// .animatedView {
+//   flex: 1;
+// }
+
+.content {
+  background-color: @bgColor;
+  flex: 1;
+  align-items: center;
+  display: flex;
+}
+
+.footer {
+  position: relative;
+  background-color: @bgLightColor;
+  flex: 1;
+  // height: 300px
+}
+
+.title {
+  .bigTitle();
+
+  position: absolute;
+  color: #61dafb;
+  text-align: center;
+  left: 0;
+  top: 88px;
+  width: 100%;
+}
+
+.animatedRow {
+  position: absolute;
+  left: 0;
+  top: 188px;
+  width: 100%;
+  // height: 128px;
+  display: flex;
+  align-items: center;
+}
+.animatedIcon {
+  width: 128px;
+  height: 113.3px;
+}
+.logo {
+  height: 100%;
+  width: 100%;
+}
+.cardRow {
+  position: absolute;
+  top: 346px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  elevation: 1;
+}
+.card {
+  background-color: #fff;
+  width: 360px;
+  border-radius: 12px;
+  padding: 32px 24px;
+}
+.cardTitle {
+  .cardTitle();
+
+}
+.cardDesc {
+  .cardDesc();
+
+  margin-top: 12px;
+}
+
+.btnContainer {
+  position: absolute;
+  bottom: 42px;
+  width: 100%;
+  // height: 100px;
+}
+
+.btn {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.btnTitle {
+  font-size: @h3;
+}

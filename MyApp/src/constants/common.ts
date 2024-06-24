@@ -4,6 +4,7 @@
 export enum PAGE_STATUS_ENUM {
   LOADING = 'LOADING',
   COMPLETE = 'COMPLETE',
+  HIDE = 'HIDE',
 }
 
 /**

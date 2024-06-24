@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import type { PropsWithChildren } from 'react'
 import {
   Pressable,
@@ -30,9 +30,26 @@ const Main: React.FC<PropsWithChildren<{}>> = () => {
   const isPageVisible = pageStatus === PAGE_STATUS_ENUM.LOADING;
 
 
+  /**
+   * 假设3s后主页加载成功，隐藏欢迎页
+   */
+  const hidePageVisible = () => {
+    setTimeout(() => {
+      setPageStatus(PAGE_STATUS_ENUM.COMPLETE);
+    }, 3000);
+  }
+
+  const init = () => {
+    hidePageVisible();
+  }
+
+  useEffect(() => {
+    init();
+  }, []);
+
   return <SafeAreaView style={styles.layout}>
+    <Welcome visible={isPageVisible}></Welcome>
     <View style={styles.row}>
-      <Welcome visible={isPageVisible}></Welcome>
 
       <HeaderBar></HeaderBar>
 
@@ -89,6 +106,7 @@ const Main: React.FC<PropsWithChildren<{}>> = () => {
         
       </View>
     </View>
+
   </SafeAreaView>
 
   // return <SafeAreaView>
