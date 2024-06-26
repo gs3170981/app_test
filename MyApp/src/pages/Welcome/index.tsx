@@ -11,11 +11,6 @@ import { ROUTER_APP_ENUM, ROUTER_ENUM } from '@/router';
 // 定义堆栈导航的类型
 interface IProps extends NativeStackScreenProps<typeof ROUTER_APP_ENUM> {}
 
-// {
-//   Welcome: undefined;
-//   Home: undefined;
-// }
-
 const Welcome: React.FC<IProps> = props => {
   const {navigation} = props;
 
